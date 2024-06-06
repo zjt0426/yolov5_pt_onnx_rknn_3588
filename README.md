@@ -1,5 +1,5 @@
 ### yolov5    pt-->onnx-->rknn-->3588:<br>
-## 本项目主要完成板卡部署推理功能，实现yolov5s.pt转yolov5s.onnx，yolov5s.onnx转yolov5s.rknn，yolov5s.rknn部署到rk3588并进行推理。<br>
+## 本项目主要完成RK3588板卡部署推理功能，实现yolov5s.pt转yolov5s.onnx，yolov5s.onnx转yolov5s.rknn，yolov5s.rknn部署到rk3588并进行推理。<br>
 ## 1.配置yolov5环境<br>
 如需板卡安装anaconda3，则运行sudo wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-aarch64.sh 命令，此处忽略安装过程。<br>
 conda create -n rknn python=3.9<br>
