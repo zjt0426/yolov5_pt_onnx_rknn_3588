@@ -12,6 +12,7 @@ python export.py --weights weights/yolov5s.pt --img 640 --batch 1 --include onnx
 ## 2.配置rknn-toolkit2环境<br>
 主要完成linux下的onnx转rknn模型。 <br>
 pip install -r requirements_cp39-1.6.0.txt -i https://mirror.baidu.com/pypi/simple<br>
+下面是rknn-toolkit2包的下载方式，进入Github https://github.com/rockchip-linux/rknn-toolkit2 进入目录rknn-toolkit2/packages/下，下载rknn_toolkit2-1.6.0+81f21f4d-cp39-cp39-linux_x86_64.whl文件到yolov5目录下。或者直接使用 git clone https://github.com/rockchip-linux/rknn-toolkit2.git 下载，不过文件包含内容太大，大部分用不上。
 pip install rknn_toolkit2-1.6.0+81f21f4d-cp39-cp39-linux_x86_64.whl<br>
 验证rknn-toolkit2是否安装成功：<br>
 (rknn)@:./rknn-toolkit2$:python<br>
