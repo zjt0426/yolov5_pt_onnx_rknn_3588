@@ -11,7 +11,6 @@ python export.py --weights weights/yolov5s.pt --img 640 --batch 1 --include onnx
 
 ## 2.配置rknn-toolkit2环境<br>
 主要完成linux下的onnx转rknn模型。 <br>
-cd rknn-toolkit2<br>
 pip install -r requirements_cp39-1.6.0.txt -i https://mirror.baidu.com/pypi/simple<br>
 pip install rknn_toolkit2-1.6.0+81f21f4d-cp39-cp39-linux_x86_64.whl<br>
 验证rknn-toolkit2是否安装成功：<br>
@@ -19,7 +18,7 @@ pip install rknn_toolkit2-1.6.0+81f21f4d-cp39-cp39-linux_x86_64.whl<br>
 from rknn.api import RKNN<br>
 
 没有报错说明安装rknn-toolkit2成功，并quit()退出当前编译<br>
-运行以下命令将onnx转换为rknn模型<br>
+运行以下命令将onnx转换为rknn模型，注意修改程序中的模型名称。<br>
 python onnx2rknn.py<br>
 
 ## 3.配置rknn-toolkit-lite2环境并推理<br>
