@@ -1,7 +1,7 @@
 yolov5_pt-->onnx-->rknn-->3588:
 # 将yolov5s.pt转成yolov5s.onnx，将yolov5s.onnx转成yolov5s.rknn，将yolov5s.rknn部署到rk3588并进行推理。
 # 1.配置yolov5环境
-conda create -n rknn python=3.9
+conda create -n rknn python=3.9 /n
 conda activate rknn
 进入到requirements.txt目录下。
 pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple
