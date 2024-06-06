@@ -10,7 +10,8 @@ pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple<br>
 python export.py --weights weights/yolov5s.pt --img 640 --batch 1 --include onnx<br>
 
 ## 2.配置rknn-toolkit2环境<br>
-主要完成linux下的onnx转rknn模型。 cd rknn-toolkit2<br>
+主要完成linux下的onnx转rknn模型。 <br>
+cd rknn-toolkit2<br>
 pip install -r requirements_cp39-1.6.0.txt -i https://mirror.baidu.com/pypi/simple<br>
 pip install rknn_toolkit2-1.6.0+81f21f4d-cp39-cp39-linux_x86_64.whl<br>
 验证rknn-toolkit2是否安装成功：<br>
