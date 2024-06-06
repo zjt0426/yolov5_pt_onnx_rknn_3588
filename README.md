@@ -27,7 +27,7 @@ python onnx2rknn.py<br>
 安装rknn-toolkit-lite2<br>
 进入到yolov5主目录下，运行以下命令<br>
 pip install rknn_toolkit_lite2-1.4.0-cp39-cp39-linux_aarch64.whl<br>
-板端推理测试，会调用librknnrt.so库，该库是一个板端的runtime库。默认的库版本可能是1.5.0，本项目用到的库版本是1.5.2并能成功运行。rknpu2工程可以从https://github.com/rockchip-linux/rknpu2 获取。<br>
+板端推理测试，会调用librknnrt.so库，该库是一个板端的runtime库。本项目用到的库版本是1.5.2并能成功运行。rknpu2工程可以从https://github.com/rockchip-linux/rknpu2 获取。<br>
 注意RKNN-Toolkit2，RKNPU2 runtime库不同版本号可能会不兼容，可能会出现 Invalid RKNN model verslon 6 错误, 请更新librknnrt.so库或者使用对应版本的RKNN-Toolkit2重新转换出rknn模型。<br>
 sudo cp librknnrt.so /usr/lib/<br>
 
